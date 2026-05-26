@@ -2,27 +2,21 @@ import { ref } from "vue";
 
 type SnackbarType = "success" | "error";
 
-const errorModalVisible = ref(false);
-const modalTitle = ref("");
-const snackbarVisible = ref(false);
-const snackbarMessage = ref("");
-const snackbarType = ref<SnackbarType>("success");
-
 export function useFeedbackMessage() {
-  // // エラーモーダルの表示/非表示
-  // const errorModalVisible = ref(false);
+  // エラーモーダルの表示/非表示
+  const errorModalVisible = ref(false);
 
-  // // エラーモーダルに表示するタイトル
-  // const modalTitle = ref("");
+  // エラーモーダルに表示するタイトル
+  const modalTitle = ref("");
 
-  // // スナックバーの表示/非表示
-  // const snackbarVisible = ref(false);
+  // スナックバーの表示/非表示
+  const snackbarVisible = ref(false);
 
-  // // スナックバーに表示するメッセージ
-  // const snackbarMessage = ref("");
+  // スナックバーに表示するメッセージ
+  const snackbarMessage = ref("");
 
-  // // スナックバーの種類
-  // const snackbarType = ref<SnackbarType>("success");
+  // スナックバーの種類
+  const snackbarType = ref<SnackbarType>("success");
 
   // エラーモーダルを表示する内部処理
   const openErrorModal = (title: string) => {

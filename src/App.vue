@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useCounterStore } from './stores/counter'
@@ -108,4 +109,12 @@ const checkSupabaseRest = async () => {
       </article>
     </section>
   </main> -->
+=======
+<template>
+  <ModalTestView />
+>>>>>>> upstream/feature/snackbar
 </template>
+
+<script setup lang="ts">
+import ModalTestView from './views/ModalTestView.vue'
+</script>
